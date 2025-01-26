@@ -1,2 +1,2 @@
-rootProject.name = "bootstrap-template-spring-kotlin"
+rootProject.name = "tool-github-actions"
 
