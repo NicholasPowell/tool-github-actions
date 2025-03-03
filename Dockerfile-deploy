@@ -1,0 +1,12 @@
+FROM gradle:8.8-jdk17 AS build
+WORKDIR /app
+COPY tool/gradle /app/gradle
+COPY tool/gradlew /app/
+COPY settings.gradle.kts build.gradle.kts /app/
+COPY src /app/src
+RUN ./gradlew build
+
+FROM openjdk:17.0.1-jdk-slim
+WORKDIR /app
+COPY --from=build /app/build/libs/tool-1.0-SNAPSHOT.jar /app/tool.jar
+ENTRYPOINT ["java", "-jar", "tool.jar"]

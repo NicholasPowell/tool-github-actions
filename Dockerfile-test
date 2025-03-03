@@ -1,0 +1,9 @@
+FROM gradle:8.8-jdk17 AS build
+WORKDIR /app
+COPY tool/gradle /app/gradle
+COPY tool/gradle/wrapper /app/gradle/wrapper
+COPY tool/gradlew /app/
+COPY settings.gradle.kts build.gradle.kts /app/
+RUN ./gradlew clean build --no-daemon > /dev/null 2>&1 || true
+COPY src /app/src
+RUN ./gradlew clean test --no-daemon
