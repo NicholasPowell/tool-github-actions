@@ -4,8 +4,7 @@ package com.niloda.github.spi.domain
 
 import arrow.core.raise.Raise
 
-interface FetchRepositoryNames {
+interface CreateFromTemplate {
     context(Raise<Throwable>)
-    suspend operator fun invoke(): List<String>
+    suspend operator fun invoke(template: String, name: String)
 }
-

@@ -1,4 +1,4 @@
-package com.niloda.github.integration
+package com.niloda.github.integration.config
 
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json

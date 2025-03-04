@@ -1,4 +1,4 @@
-package com.niloda.github.integration.actions
+package com.niloda.github.integration.domain
 
 import kotlinx.serialization.Serializable
 

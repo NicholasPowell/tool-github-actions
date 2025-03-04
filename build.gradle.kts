@@ -43,6 +43,10 @@ sources {
 
         implementation dependsOn "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
         implementation dependsOn "org.jetbrains.kotlinx:kotlinx-coroutines-reactor:1.6.4"
+        implementation dependsOn "io.ktor:ktor-client-core:2.3.8"
+        implementation dependsOn "io.ktor:ktor-client-cio:2.3.8"
+
+        implementation dependsOn "io.netty:netty-resolver-dns-native-macos:4.1.107.Final:osx-aarch_64"
     }
 
     val main by getting {

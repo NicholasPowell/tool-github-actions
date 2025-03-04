@@ -1,5 +1,7 @@
-package com.niloda.github.integration
+package com.niloda.github.integration.api
 
+import com.niloda.github.integration.GithubProperties
+import com.niloda.github.integration.HttpClientBuilder
 import kotlinx.serialization.json.Json
 
 /**
@@ -11,6 +13,6 @@ interface GithubCaller {
     val json: Json
     val token get() = githubProperties.token
 
-    val webClient: WebClientBuilder
+    val httpClient: HttpClientBuilder
 }
 

@@ -12,8 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest
 class GithubClientTest(
     @Autowired private val githubClient: GithubClient
 ) {
-    @Test
-    fun go() {
-        println(githubClient.go())
-    }
+
+
+
 }
