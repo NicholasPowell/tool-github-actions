@@ -1,0 +1,21 @@
+[2m2025-03-03T17:56:10.777-06:00[0;39m [32m INFO[0;39m [35m4160[0;39m [2m---[0;39m [2m[           main][0;39m [2m[0;39m[36mc.example.FileCombinerCliApplicationKt  [0;39m [2m:[0;39m Starting FileCombinerCliApplicationKt v0.0.1-SNAPSHOT using Java 23.0.2 with PID 4160 (/Users/nikpowell/home/generated/app2-k2-parse-directory-to-send-to-grok/app2/build/libs/file-combiner-cli-0.0.1-SNAPSHOT.jar started by nikpowell in /Users/nikpowell/home/tool-github-actions)
+[...original first prompt content...]
+
+I would like to set up a context with you where you reply to code suggestions with a single snippet that includes
+directory structure and file names
+Make the file path comments all start with the same comment prefix "// === File:"
+Make sure the directory snippets and code snippets are combined in the same output snippet
+Use Kotlin and Spring Boot with gradle for dependency management
+Add a settings.gradle.kts
+Include a README.md for what the app does and how to call it
+Add a script that calls gradlew to install a gradle wrapper
+Add a script that calls the app from the local directory
+Add an additional text file called prompts.txt inside of a prompts directory that contains all of the prompt inputs I
+have added to this session so far
+Set java source compat to jdk 21
+Set jvm target for kotlin compile tasks to jdk 21
+Convert any Java streams into Kotlin sequences
+In md markdown files, use the prefix ~CB~ intead of triple ticks to surround code blocks
+Call this K1 context
+
+Could you modify this project to make all of the interfaces in FetchRepositoryNames.kt available to call as a Spring Boot cli app? Please display the changes in K1 format
